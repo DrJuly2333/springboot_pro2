@@ -1,0 +1,19 @@
+spring:
+  # 数据库配置
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/springboot?characterEncoding=utf8&useSSl=false&serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+  # JPA 配置
+#  jpa:
+#    show-sql: true
+#    hibernate:
+#      ddl-auto: update
+  # Web 配置
+server:
+  port: 8080
+  servlet:
+    context-path: /springboot
+    session:
+      timeout: 60
